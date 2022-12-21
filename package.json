@@ -1,0 +1,20 @@
+{
+  "name": "atlant-gas",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "sass": "^1.57.0",
+    "swiper": "^8.4.4"
+  }
+}

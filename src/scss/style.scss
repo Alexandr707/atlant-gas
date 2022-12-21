@@ -1,0 +1,968 @@
+@import "./reset";
+@import "./vars";
+@import "./fonts";
+@import "swiper/swiper-bundle.css";
+@import "animate.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $charlestonGreen;
+  font-family: "Open Sans", sans-serif;
+  color: $antiFlashWhite;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+button {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.header {
+  padding: 24px 32px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header_left {
+  display: flex;
+  align-items: flex-end;
+}
+.header__logo {
+  float: left;
+  width: 272px;
+  height: 100px;
+}
+.header__warm {
+  max-width: 142px;
+  padding-left: 20px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+  color: $dodgeBlue;
+  font-style: italic;
+  line-height: 1;
+
+  border-left: 1px solid #ffffff;
+}
+.header__right {
+  position: relative;
+  top: 3px;
+  display: flex;
+  padding-right: 73px;
+  flex-direction: column;
+}
+.header__tel {
+  font-family: "Russo One", sans-serif;
+  font-size: 24px;
+  color: $antiFlashWhite;
+  text-decoration: none;
+}
+.header__question {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: $dodgeBlue;
+  text-decoration: underline;
+}
+// delivery section
+.delivery {
+  position: relative;
+  &__container {
+    padding: 22px 0 72px;
+  }
+}
+.delivery__container {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(1stscreen.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+}
+.delivery__about {
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+}
+.delivery__time {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+
+  &:not(:last-child) {
+    margin-right: 34px;
+  }
+
+  dt {
+    img {
+      float: left;
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+
+      &:first-child {
+        opacity: 0.4;
+      }
+
+      &:not(:first-child) {
+        color: $dodgeBlue;
+      }
+    }
+  }
+  dd {
+    font-family: "Open Sans";
+    font-weight: 300;
+  }
+}
+.delivery__title {
+  margin: 12px 0 14px;
+  font-family: "Russo One";
+  max-width: 530px;
+  font-size: 64px;
+  line-height: 1;
+  color: $dodgeBlue;
+}
+.delivery_text {
+  position: relative;
+  max-width: 310px;
+  margin-bottom: 40px;
+  font-family: "Russo One";
+  font-size: 24px;
+  line-height: 1.208;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 95%;
+    top: 40%;
+    width: 90px;
+    height: 70px;
+    background-image: url(dashedArrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.delivery__order {
+  max-width: 395px;
+  margin-bottom: 14px;
+
+  font-family: "Russo One";
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+
+  padding: 20px 62px;
+
+  color: $antiFlashWhite;
+
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+
+  background-color: $dodgeBlue;
+  border-radius: 11px;
+  box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: darken($dodgeBlue, 15%);
+    &::before {
+      background: linear-gradient(
+        to right,
+        darken($dodgeBlue, 15%) 0,
+        darken(#81c0fb, 15%) 50%,
+        darken($dodgeBlue, 15%) 100%
+      );
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background: linear-gradient(
+      to right,
+      $dodgeBlue 0,
+      #81c0fb 50%,
+      $dodgeBlue 100%
+    );
+    border-radius: 11px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-image: url(btn-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.delivery__subtitle {
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: 1;
+}
+
+.price {
+  position: relative;
+
+  &__container {
+    padding: 46px 32px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $dodgeBlue;
+    opacity: 0.05;
+    z-index: -1;
+  }
+}
+.price__title {
+  margin-bottom: 49px;
+
+  font-family: "Russo One";
+  font-size: 36px;
+  color: $dodgeBlue;
+  text-align: center;
+}
+.price__grid {
+  display: grid;
+  grid-template-columns: 255px 1fr 255px;
+}
+.price__card {
+  padding-top: 28px;
+}
+.price__card-title {
+  font-family: "Russo One";
+  font-size: 36px;
+}
+.price__subtitle {
+  margin-bottom: 21px;
+  font-family: "Russo One";
+  color: $dodgeBlue;
+  font-size: 24px;
+  white-space: nowrap;
+}
+.price__text {
+  font-family: "Open Sans";
+  font-weight: 300;
+  margin-bottom: 58px;
+}
+.price__order {
+  display: inline-block;
+  padding: 10px 35px;
+
+  font-family: "Open Sans";
+  color: $antiFlashWhite;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: $dodgeBlue;
+  border-radius: 250px;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: darken($dodgeBlue, 15%);
+  }
+}
+.price__card-center {
+  position: relative;
+  height: 100%;
+}
+.price__title-center {
+  margin-bottom: 13px;
+  font-family: "Russo One";
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.7;
+}
+.price__ratio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  dl + dl {
+    margin-left: 25px;
+    padding-left: 25px;
+    border-left: 1px solid rgba(241, 241, 241, 0.3);
+  }
+  dt {
+    font-family: "Russo One";
+    font-size: 36px;
+    line-height: 1;
+    opacity: 0.7;
+  }
+  dd {
+    font-family: "Russo One";
+    font-size: 18px;
+    line-height: 1;
+    opacity: 0.7;
+  }
+}
+
+.price__arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 99px;
+  height: 64px;
+  background-image: url(arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+
+.benefits {
+}
+.benefits__container {
+  padding: 56px 32px 0;
+}
+.benefits__title {
+  margin-bottom: 25px;
+  font-family: "Russo One";
+  font-size: 36px;
+  text-align: center;
+}
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin-bottom: 40px;
+}
+.benefits__card {
+  &:nth-child(3n + 2) {
+    padding-top: 40px;
+  }
+}
+.benefits__image {
+  text-align: center;
+}
+.benefits__card-title {
+  margin-bottom: 14px;
+  font-family: "Russo One";
+  color: $dodgeBlue;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+}
+.benefits__text {
+  text-align: center;
+  font-weight: 300;
+}
+.benefits__after {
+  display: flex;
+}
+.benefits__after-image {
+  width: 50%;
+}
+.benefits__after-content {
+  width: 50%;
+}
+.benefits__after-title {
+  font-family: "Russo One";
+  font-size: 35px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+
+  & span {
+    color: $dodgeBlue;
+  }
+}
+.benefits__after-blue {
+  padding: 8px 13px;
+  font-weight: 800;
+  font-size: 14px;
+
+  background-color: $dodgeBlue;
+}
+
+.volum {
+}
+.volum__contaimer {
+  padding: 34px 32px 84px;
+}
+.volum__title {
+  margin-bottom: 45px;
+
+  font-family: "Russo One";
+  font-size: 36px;
+  color: $dodgeBlue;
+  text-align: center;
+}
+
+.volum__thumbs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  dl + dl {
+    margin-left: 24px;
+  }
+
+  dl {
+    width: 164px;
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    opacity: 0.7;
+    background: rgba(241, 241, 241, 0.2);
+    border-radius: 20px;
+    transition: background 0.3s, opacity 0.3s;
+
+    cursor: pointer;
+    pointer-events: all;
+    user-select: none;
+
+    &.active {
+      background-color: $dodgeBlue;
+      opacity: 1;
+    }
+  }
+  dt,
+  dd {
+    font-family: "Russo One";
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+.volum__slide {
+  text-align: center;
+}
+
+.volum__order-container {
+  text-align: center;
+}
+
+.volum__order {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $antiFlashWhite;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.prev,
+.next {
+  position: relative;
+  z-index: 9;
+  background-color: #ffffff;
+}
+
+// volum section
+.feedback {
+}
+.feedback__container {
+  padding: 40px 64px 82px;
+}
+.feedback__title {
+  margin-bottom: 47px;
+  text-align: center;
+  font-family: "Russo One";
+  font-size: 36px;
+  line-height: 1.2;
+  color: $dodgeBlue;
+}
+
+.feedback__card-container {
+  display: flex;
+  justify-content: center;
+}
+.feedback__card {
+  position: relative;
+  padding: 40px 40px 40px 264px;
+  max-width: calc(760px - 40px - 264px);
+  min-height: calc(320px - 2 * 40px);
+  background-color: $antiFlashWhite;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+
+  img {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 201px;
+    height: 240px;
+    border-radius: 40px;
+    object-fit: contain;
+  }
+}
+.feedback__card-title {
+  font-family: "Russo One";
+  font-size: 24px;
+  line-height: 1.2;
+  color: $dodgeBlue;
+}
+.feedback__city {
+  margin: 4px 0 15px 0;
+  font-family: "Russo One";
+  font-size: 18px;
+  line-height: 1.2;
+  color: $charlestonGreen;
+}
+.feedback__text {
+  max-height: 165px;
+  font-weight: 300;
+  color: $charlestonGreen;
+  overflow-x: auto;
+}
+
+.swiper-dots {
+  width: 61px;
+  height: 18px;
+  background: rgba(241, 241, 241, 0.2);
+  border-radius: 20px;
+  &-active {
+    background-color: $dodgeBlue;
+  }
+}
+
+.swiper-pagination-bullet {
+  margin: 0;
+  width: 61px;
+  height: 18px;
+  background: rgba(241, 241, 241, 0.2);
+  // background-color: $yankeesBlue;
+  border-radius: 20px;
+  & + & {
+    margin-left: 8px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: $dodgeBlue;
+}
+.swiper-pagination {
+  top: calc(100% + 24px);
+  margin-bottom: 40px;
+}
+
+.slide-next,
+.slide-prev {
+  position: absolute;
+  top: 50%;
+  width: 49px;
+  height: 74px;
+  background-color: transparent;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.slide-next {
+  left: 100%;
+  background-image: url(feedback-right-arrow.svg);
+}
+.slide-prev {
+  right: 100%;
+  background-image: url(feedback-left-arrow.svg);
+}
+// accordion section
+.answer {
+  background-color: rgba($dodgeBlue, 0.05);
+}
+.answer__container {
+  padding: 40px 0;
+}
+.answer__title {
+  margin-bottom: 27px;
+  font-family: "Russo One";
+  font-size: 36px;
+  line-height: 1.2;
+  color: $dodgeBlue;
+  text-align: center;
+}
+
+.accordion__container {
+  position: relative;
+  padding: 24px 24px 24px 70px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  input:checked ~ .accordion__text {
+    max-height: 300px;
+  }
+  input:checked ~ .accordion__arrow {
+    fill: $dodgeBlue;
+    transform: rotate(180deg);
+  }
+  input:checked ~ .accordion__title {
+    color: $dodgeBlue;
+  }
+}
+.accordion__arrow {
+  position: absolute;
+  left: 40px;
+  top: 27px;
+  width: 16px;
+  height: 16px;
+  fill: $antiFlashWhite;
+  transition: transform 0.3s, fill 0.3s;
+}
+.accordion__title {
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.accordion__text {
+  margin-top: 16px;
+  max-height: 0;
+  overflow: hidden;
+  font-weight: 300;
+  line-height: 1.2;
+  transition: max-height 0.7s;
+}
+// accorion section
+.question {
+}
+.question__container {
+  padding: 55px 32px 0;
+  display: flex;
+}
+.question__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.question__title {
+  margin-bottom: 50px;
+  font-family: "Russo One";
+  font-size: 36px;
+  line-height: 1.2;
+}
+.question__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.question__name {
+}
+.input {
+  width: 402px;
+  margin-bottom: 24px;
+  padding: 17px 22px 18px 22px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    color: rgba(45, 45, 45, 0.5);
+  }
+}
+.question__phone {
+}
+.question__q {
+  max-height: 112px;
+  resize: none;
+}
+.question__submit {
+  padding: 15px 40px;
+  font-weight: 700;
+  font-size: 18px;
+  color: $antiFlashWhite;
+  letter-spacing: 2px;
+  background-color: $dodgeBlue;
+  border-radius: 70px;
+  transition: background 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($dodgeBlue, 15%);
+  }
+}
+.question__right {
+  width: 50%;
+}
+.question__image {
+  position: relative;
+  text-align: center;
+  img {
+    width: 356px;
+    height: 454px;
+    border-radius: 40px;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+    transform-origin: center;
+    object-fit: cover;
+  }
+}
+.question__about {
+  position: absolute;
+  top: 70%;
+  left: 8%;
+  padding: 18px 26px;
+  text-align: left;
+  line-height: 1.2;
+  background-color: $dodgeBlue;
+  opacity: 0.8;
+  border-radius: 20px;
+  .name {
+    font-family: "Russo One";
+    font-size: 24px;
+  }
+  .job {
+    font-weight: 600;
+  }
+}
+
+// question section
+.partners {
+}
+.partners__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 71px 32px 40px;
+}
+.partners__p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 66px;
+
+  background-color: $antiFlashWhite;
+  border-radius: 20px;
+  transition: background 0.3s;
+  & + & {
+    margin-left: 16px;
+  }
+  &:hover {
+    background-color: darken($antiFlashWhite, 15%);
+  }
+}
+
+.footer {
+}
+.footer__container {
+  padding-bottom: 68px;
+}
+.footer__title {
+  max-width: 690px;
+  margin: 0px auto 14px;
+  text-align: center;
+  font-family: "Russo One";
+  color: $dodgeBlue;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.footer__btn {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.footer__order {
+  font-family: "Russo One";
+  font-size: 24px;
+  line-height: 1.2;
+}
+.footer__contacts {
+  display: flex;
+  margin-bottom: 40px;
+  background-color: $antiFlashWhite;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+  overflow: hidden;
+}
+.footer__about {
+  width: 50%;
+  padding: 40px;
+}
+.footer__about-title {
+  margin-bottom: 30px;
+  font-family: "Russo One";
+  color: $dodgeBlue;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__text {
+  margin-bottom: 26px;
+  color: $yankeesBlue;
+  font-size: 18px;
+  line-height: 1.388;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__line {
+  margin-bottom: 36px;
+  border-top: 1px solid rgba(27, 38, 57, 0.2);
+}
+.footer__ofice,
+.footer__phone {
+  margin-bottom: 15px;
+  color: $dodgeBlue;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.388;
+  text-transform: uppercase;
+}
+.footer__location {
+  margin-bottom: 55px;
+}
+.footer__location,
+.footer__ph {
+  color: $yankeesBlue;
+  font-size: 18px;
+  line-height: 1.388;
+}
+.footer__map {
+  width: 50%;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+.footer__link {
+  color: $antiFlashWhite;
+  font-size: 14px;
+  line-height: 1.357;
+  text-decoration-line: underline;
+}
+
+// popap
+body.open {
+  .popap {
+    display: block;
+  }
+}
+.popap {
+  display: none;
+  position: relative;
+  z-index: 10;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+}
+.popap__backpalte {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(45, 45, 45, 0.9);
+}
+.popap__container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  max-width: 462px;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+}
+.popap__title {
+  font-family: "Russo One";
+  max-width: 230px;
+  margin-bottom: 30px;
+  color: $dodgeBlue;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.popap__close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 22px;
+  height: 22px;
+  background-image: url(close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.popap__form {
+  &:last-child {
+    text-align: center;
+  }
+}
+.popap__name {
+}
+.popap__input {
+  margin-bottom: 24px;
+  padding: 17px 22px 18px 22px;
+  width: 100%;
+  border: 1px solid #dedede;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: rgba(45, 45, 45, 0.5);
+  }
+}
+.popap__phone {
+}
+.popap__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  max-width: 360px;
+  margin: 42px auto 0 auto;
+  padding: 30px;
+  align-self: center;
+  font-family: "Russo One";
+  font-size: 24px;
+  line-height: 1.2;
+  color: $antiFlashWhite;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
