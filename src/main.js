@@ -4,10 +4,10 @@ import "./scss/style.scss";
 // import "swiper/swiper-bundle.css";
 import Swiper from "swiper/swiper-bundle.esm.js";
 
-const thumbs: HTMLElement = document.querySelector(".volum__thumbs")!;
+const thumbs = document.querySelector(".volum__thumbs");
 const galleryTop = new Swiper(".volume__galery", {
   on: {
-    slideChange: function ({ activeIndex }: Swiper) {
+    slideChange: function ({ activeIndex }) {
       for (const el of thumbs.children) {
         el.classList.remove("active");
         if (parseInt(el.dataset.num) === activeIndex)
@@ -18,8 +18,8 @@ const galleryTop = new Swiper(".volume__galery", {
 });
 
 if (thumbs) {
-  thumbs.addEventListener("click", function (e: Event) {
-    const target: keyof HTMLElement = e.target!;
+  thumbs.addEventListener("click", function (e) {
+    const target = e.target;
     const dl = target.closest("dl");
     if (dl) {
       for (const el of thumbs.children) {
