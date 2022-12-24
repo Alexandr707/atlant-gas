@@ -89,6 +89,7 @@ button {
 // delivery section
 .delivery {
   position: relative;
+  overflow-x: hidden;
   &__container {
     padding: 22px 0 72px;
   }
