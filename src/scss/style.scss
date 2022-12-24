@@ -102,7 +102,7 @@ button {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url(1stscreen.png);
+    background-image: url(/1stscreen.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
@@ -167,7 +167,7 @@ button {
     top: 40%;
     width: 90px;
     height: 70px;
-    background-image: url(dashedArrow.svg);
+    background-image: url(/dashedArrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -235,7 +235,7 @@ button {
     left: 5px;
     width: calc(100% - 10px);
     height: calc(100% - 10px);
-    background-image: url(btn-bg.svg);
+    background-image: url(/btn-bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -359,7 +359,7 @@ button {
   left: 50%;
   width: 99px;
   height: 64px;
-  background-image: url(arrow-down.svg);
+  background-image: url(/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: center;
   transform: translate(-50%, 50%);
@@ -615,11 +615,11 @@ button {
 }
 .slide-next {
   left: 100%;
-  background-image: url(feedback-right-arrow.svg);
+  background-image: url(/feedback-right-arrow.svg);
 }
 .slide-prev {
   right: 100%;
-  background-image: url(feedback-left-arrow.svg);
+  background-image: url(/feedback-left-arrow.svg);
 }
 // accordion section
 .answer {
