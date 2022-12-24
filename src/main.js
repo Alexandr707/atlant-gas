@@ -1,8 +1,7 @@
 import "./scss/style.scss";
 
-// import Swiper from "swiper";
-// import "swiper/swiper-bundle.css";
 import Swiper from "swiper/swiper-bundle.esm.js";
+import WOW from "wow.js";
 
 const thumbs = document.querySelector(".volum__thumbs");
 const galleryTop = new Swiper(".volume__galery", {
@@ -69,3 +68,8 @@ if (closePopap) {
     document.body.classList.remove("open");
   });
 }
+
+const wow = new WOW(/* {
+  offset: 200,
+} */);
+wow.init();

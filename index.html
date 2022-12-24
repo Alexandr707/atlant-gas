@@ -25,11 +25,15 @@
       </div>
     </header>
     <main class="main">
-      <section class="delivery">
+      <section class="delivery wow animate__fadeIn" data-wow-duration="1s">
         <div class="container">
           <div class="delivery__container">
             <div class="delivery__about">
-              <dl class="delivery__time">
+              <dl
+                class="delivery__time wow fadeIn"
+                data-wow-offset="200"
+                data-wow-delay
+              >
                 <dt>
                   <img src="moon.svg" alt="moon" /><img
                     src="arrow-right.svg"
@@ -51,9 +55,11 @@
               <p class="delivery_text">
                 в любую точку Москвы и Московской области
               </p>
-              <a href="#" class="btn delivery__order open-popap"
-                >Заказать доставку газа в газгольдер</a
-              >
+              <div class="wow animate__bounceIn" data-wow-delay=".3s">
+                <a href="#" class="btn delivery__order open-popap"
+                  >Заказать доставку газа в газгольдер</a
+                >
+              </div>
               <h6 class="delivery__subtitle">
                 Доставка газа всегда по актуальным ценам
               </h6>
@@ -61,14 +67,23 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section
+        class="price wow animate__fadeIn"
+        data-wow-offset="300"
+        data-wow-duration="1s"
+      >
         <div class="container">
           <div class="price__container">
             <h1 class="price__title">
               Стоимость газа в ваш газгольдер сегодня
             </h1>
             <div class="price__grid">
-              <div class="price__card">
+              <div
+                class="price__card wow animate__fadeIn"
+                data-wow-offset="200"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
                 <h2 class="price__card-title">Пропан</h2>
                 <h3 class="price__subtitle">от 25 рублей за литр</h3>
                 <p class="price__text">
@@ -78,7 +93,12 @@
                 <a href="" class="price__order open-popap">Заказать</a>
               </div>
 
-              <div class="price__card-center">
+              <div
+                class="price__card-center wow animate__fadeIn"
+                data-wow-offset="200"
+                data-wow-duration="1s"
+                data-wow-delay=".2s"
+              >
                 <h2 class="price__title-center">Идеальное соотношение</h2>
                 <div class="price__ratio">
                   <dl>
@@ -93,7 +113,12 @@
                 <img src="proportions.png" alt="car" />
               </div>
 
-              <div class="price__card">
+              <div
+                class="price__card wow animate__fadeIn"
+                data-wow-offset="200"
+                data-wow-duration="1s"
+                data-wow-delay=".8s"
+              >
                 <h2 class="price__card-title">Бутан</h2>
                 <h3 class="price__subtitle">от 16 рублей за литр</h3>
                 <p class="price__text">
@@ -105,17 +130,26 @@
             </div>
           </div>
         </div>
-        <div class="price__arrow"></div>
+        <a class="price__arrow" href="#benefits__title"></a>
       </section>
-      <section class="benefits">
+      <section
+        class="benefits wow animate__fadeIn"
+        data-wow-offset="300"
+        data-wow-duration="1s"
+      >
         <!--benefits-->
         <div class="container">
           <div class="benefits__container">
-            <h1 class="benefits__title">
+            <h1 class="benefits__title" id="benefits__title">
               Преимущества работы с нашей компанией
             </h1>
             <div class="benefits__grid">
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".2s"
+              >
                 <div class="benefits__image">
                   <img src="benef1.png" alt="Экономия на хранилище" />
                 </div>
@@ -124,14 +158,24 @@
                   за счёт собственных цистерн на нашей базе
                 </p>
               </div>
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".4s"
+              >
                 <div class="benefits__image">
                   <img src="benef2.png" alt="" />
                 </div>
                 <h2 class="benefits__card-title">Экономия на транспорте</h2>
                 <p class="benefits__text">более 10 собственный газовозов</p>
               </div>
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".6s"
+              >
                 <div class="benefits__image">
                   <img src="benef3.png" alt="" />
                 </div>
@@ -143,7 +187,12 @@
                   частных компаний
                 </p>
               </div>
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".2s"
+              >
                 <div class="benefits__image">
                   <img src="benef4.png" alt="" />
                 </div>
@@ -155,7 +204,12 @@
                   качества газа
                 </p>
               </div>
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".4s"
+              >
                 <div class="benefits__image">
                   <img src="benef5.png" alt="" />
                 </div>
@@ -166,7 +220,12 @@
                   все газовозы оснащены терминалами для оплаты вашего заказа
                 </p>
               </div>
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".6s"
+              >
                 <div class="benefits__image">
                   <img src="benef6.png" alt="" />
                 </div>
@@ -176,7 +235,12 @@
                   частных компаний
                 </p>
               </div>
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".2s"
+              >
                 <div class="benefits__image">
                   <img src="benef7.png" alt="" />
                 </div>
@@ -187,7 +251,12 @@
                   не требуется подъезд автомобиля вплотную к резервуару
                 </p>
               </div>
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".4s"
+              >
                 <div class="benefits__image">
                   <img src="benef8.png" alt="" />
                 </div>
@@ -198,7 +267,12 @@
                   привезем газ в удобное для вас время или же по графику
                 </p>
               </div>
-              <div class="benefits__card">
+              <div
+                class="benefits__card wow animate__fadeIn"
+                data-wow-offset="300"
+                data-wow-duration="1s"
+                data-wow-delay=".6s"
+              >
                 <div class="benefits__image">
                   <img src="benef9.png" alt="" />
                 </div>
@@ -227,7 +301,11 @@
           </div>
         </div>
       </section>
-      <section class="volum">
+      <section
+        class="volum wow animate__fadeIn"
+        data-wow-offset="300"
+        data-wow-duration="1s"
+      >
         <div class="container">
           <div class="volum__contaimer">
             <h1 class="volum__title">Выберите свой объём Газовоза</h1>
@@ -272,7 +350,11 @@
         </div>
       </section>
       <!--volum section-->
-      <section class="feedback">
+      <section
+        class="feedback wow animate__fadeIn"
+        data-wow-offset="300"
+        data-wow-duration="1s"
+      >
         <div class="container">
           <div class="feedback__container">
             <h1 class="feedback__title">Отзывы наших клиентов</h1>
@@ -367,12 +449,20 @@
         </div>
       </section>
       <!--feedback section-->
-      <section class="answer">
+      <section
+        class="answer wow animate__fadeIn"
+        data-wow-offset="300"
+        data-wow-duration="1s"
+      >
         <div class="container">
           <div class="answer__container">
             <h1 class="answer__title">Ответы на часто задаваемые вопросы</h1>
             <div class="answer__accordion accordion">
-              <div class="accordion__container">
+              <div
+                class="accordion__container wow animate__fadeInUp"
+                data-wow-duration=".3s"
+                data-wow-offset="300"
+              >
                 <input type="radio" name="acc" id="check1" hidden />
                 <svg
                   class="accordion__arrow"
@@ -395,7 +485,11 @@
                   rerum magni!
                 </div>
               </div>
-              <div class="accordion__container">
+              <div
+                class="accordion__container wow animate__fadeInUp"
+                data-wow-duration=".3s"
+                data-wow-offset="300"
+              >
                 <input type="radio" name="acc" id="check2" hidden />
                 <svg
                   class="accordion__arrow"
@@ -417,7 +511,11 @@
                   rerum magni!
                 </div>
               </div>
-              <div class="accordion__container">
+              <div
+                class="accordion__container wow animate__fadeInUp"
+                data-wow-duration=".3s"
+                data-wow-offset="300"
+              >
                 <input type="radio" name="acc" id="check3" hidden />
                 <svg
                   class="accordion__arrow"
@@ -439,7 +537,11 @@
                   rerum magni!
                 </div>
               </div>
-              <div class="accordion__container">
+              <div
+                class="accordion__container wow animate__fadeInUp"
+                data-wow-duration=".3s"
+                data-wow-offset="300"
+              >
                 <input type="radio" name="acc" id="check4" hidden />
                 <svg
                   class="accordion__arrow"
@@ -461,7 +563,11 @@
                   rerum magni!
                 </div>
               </div>
-              <div class="accordion__container">
+              <div
+                class="accordion__container wow animate__fadeInUp"
+                data-wow-duration=".3s"
+                data-wow-offset="300"
+              >
                 <input type="radio" name="acc" id="check5" hidden />
                 <svg
                   class="accordion__arrow"
@@ -488,7 +594,12 @@
         </div>
       </section>
       <!--accorion section-->
-      <section class="question" id="question">
+      <section
+        class="question wow animate__fadeIn"
+        data-wow-offset="300"
+        data-wow-duration="1s"
+        id="question"
+      >
         <div class="container">
           <div class="question__container">
             <div class="question__left">
@@ -529,7 +640,11 @@
         </div>
       </section>
       <!--question section-->
-      <section class="partners">
+      <section
+        class="partners wow animate__fadeIn"
+        data-wow-offset="300"
+        data-wow-duration="1s"
+      >
         <div class="container">
           <div class="partners__container">
             <a class="partners__p" href="#">
@@ -577,13 +692,22 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
+    <footer
+      class="footer wow animate__fadeIn"
+      data-wow-offset="300"
+      data-wow-duration="1s"
+    >
       <div class="container">
         <div class="footer__container">
           <h1 class="footer__title">
             Закажи прямо сейчас и получи бесплатную установку телеметрии﻿
           </h1>
-          <div class="footer__btn">
+          <div
+            class="footer__btn wow animate__pulse"
+            data-wow-duration="1s"
+            data-wow-offset="300"
+            data-wow-iteration="3"
+          >
             <a href="#" class="btn footer__order open-popap">Заказать газ</a>
           </div>
           <div class="footer__contacts">

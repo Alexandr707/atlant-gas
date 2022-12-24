@@ -22,6 +22,11 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+
+.wow {
+  // opacity: 0;
+  // animation-fill-mode: forwards;
+}
 button {
   box-shadow: none;
   border: none;
@@ -275,6 +280,8 @@ button {
 }
 .price__card {
   padding-top: 28px;
+  opacity: 0;
+  animation-fill-mode: both;
 }
 .price__card-title {
   font-family: "Russo One";
@@ -312,6 +319,8 @@ button {
 .price__card-center {
   position: relative;
   height: 100%;
+  opacity: 0;
+  animation-fill-mode: both;
 }
 .price__title-center {
   margin-bottom: 13px;
@@ -355,8 +364,19 @@ button {
   background-position: center;
   transform: translate(-50%, 50%);
   cursor: pointer;
+  animation: 2.8s upDown infinite;
 }
-
+@keyframes upDown {
+  from {
+    bottom: 0;
+  }
+  50% {
+    bottom: 40px;
+  }
+  to {
+    bottom: 0;
+  }
+}
 .benefits {
 }
 .benefits__container {
@@ -375,6 +395,8 @@ button {
   margin-bottom: 40px;
 }
 .benefits__card {
+  opacity: 0;
+  animation-fill-mode: both;
   &:nth-child(3n + 2) {
     padding-top: 40px;
   }
