@@ -62,9 +62,15 @@ if (orderBtns) {
 }
 
 const closePopap = document.querySelector(".popap__close");
+const backplatePopap = document.querySelector(".popap__backpalte");
 
 if (closePopap) {
   closePopap.addEventListener("click", () => {
+    document.body.classList.remove("open");
+  });
+}
+if (backplatePopap) {
+  backplatePopap.addEventListener("click", () => {
     document.body.classList.remove("open");
   });
 }
