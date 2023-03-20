@@ -1,746 +1,564 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Атлант Газ</title>
-  </head>
-  <body>
-    <header class="header">
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Атлант Газ</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header_left">
+          <a class="header__logo" href="#">
+            <img src="Logo.svg" alt="Атлант Газ" />
+          </a>
+
+          <div class="header__warm">Расправь плечи в теплом доме</div>
+        </div>
+        <div class="header__right">
+          <a class="header__tel" href="tel:+79876543210">+7 987 654-32-10</a>
+          <a class="header__question" href="#question">Срочный вопрос</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="delivery wow animate__fadeIn" data-wow-duration="1s">
       <div class="container">
-        <div class="header__container">
-          <div class="header_left">
-            <a class="header__logo" href="#">
-              <img src="Logo.svg" alt="Атлант Газ" />
-            </a>
-
-            <div class="header__warm">Расправь плечи в теплом доме</div>
-          </div>
-          <div class="header__right">
-            <a class="header__tel" href="tel:+79876543210">+7 987 654-32-10</a>
-            <a class="header__question" href="#question">Срочный вопрос</a>
+        <div class="delivery__container">
+          <div class="delivery__about">
+            <dl class="delivery__time wow fadeIn" data-wow-offset="100" data-wow-delay>
+              <dt>
+                <img src="moon.svg" alt="moon" /><img src="arrow-right.svg" alt="arrow" /><img src="sun.svg"
+                  alt="sun" />
+              </dt>
+              <dd>В любое время дня и ночи</dd>
+            </dl>
+            <dl class="delivery__time">
+              <dt>
+                <img src="cloud.svg" alt="cloud" /><img src="arrow-right.svg" alt="arrow" /><img src="snowflake.svg"
+                  alt="snowflake" />
+              </dt>
+              <dd>Вне зависимости от погодных условий</dd>
+            </dl>
+            <h2 class="delivery__title">Доставим газ за 4 часа</h2>
+            <p class="delivery_text">
+              в любую точку Москвы и Московской области
+            </p>
+            <div class="wow animate__bounceIn" data-wow-delay=".3s">
+              <a href="#" class="btn delivery__order open-popap">Заказать доставку газа в газгольдер</a>
+            </div>
+            <h6 class="delivery__subtitle">
+              Доставка газа всегда по актуальным ценам
+            </h6>
           </div>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="delivery wow animate__fadeIn" data-wow-duration="1s">
-        <div class="container">
-          <div class="delivery__container">
-            <div class="delivery__about">
-              <dl
-                class="delivery__time wow fadeIn"
-                data-wow-offset="200"
-                data-wow-delay
-              >
-                <dt>
-                  <img src="moon.svg" alt="moon" /><img
-                    src="arrow-right.svg"
-                    alt="arrow"
-                  /><img src="sun.svg" alt="sun" />
-                </dt>
-                <dd>В любое время дня и ночи</dd>
-              </dl>
-              <dl class="delivery__time">
-                <dt>
-                  <img src="cloud.svg" alt="cloud" /><img
-                    src="arrow-right.svg"
-                    alt="arrow"
-                  /><img src="snowflake.svg" alt="snowflake" />
-                </dt>
-                <dd>Вне зависимости от погодных условий</dd>
-              </dl>
-              <h1 class="delivery__title">Доставим газ за 4 часа</h1>
-              <p class="delivery_text">
-                в любую точку Москвы и Московской области
-              </p>
-              <div class="wow animate__bounceIn" data-wow-delay=".3s">
-                <a href="#" class="btn delivery__order open-popap"
-                  >Заказать доставку газа в газгольдер</a
-                >
-              </div>
-              <h6 class="delivery__subtitle">
-                Доставка газа всегда по актуальным ценам
-              </h6>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="price wow animate__fadeIn"
-        data-wow-offset="300"
-        data-wow-duration="1s"
-      >
-        <div class="container">
-          <div class="price__container">
-            <h1 class="price__title">
-              Стоимость газа в ваш газгольдер сегодня
-            </h1>
-            <div class="price__grid">
-              <div
-                class="price__card wow animate__fadeIn"
-                data-wow-offset="200"
-                data-wow-duration="1s"
-                data-wow-delay=".5s"
-              >
-                <h2 class="price__card-title">Пропан</h2>
-                <h3 class="price__subtitle">от 25 рублей за литр</h3>
-                <p class="price__text">
-                  Физически испарение происходит до -40 градусов, что позволяет
-                  использовать его в наших с вами погодных условиях
-                </p>
-                <a href="" class="price__order open-popap">Заказать</a>
-              </div>
-
-              <div
-                class="price__card-center wow animate__fadeIn"
-                data-wow-offset="200"
-                data-wow-duration="1s"
-                data-wow-delay=".2s"
-              >
-                <h2 class="price__title-center">Идеальное соотношение</h2>
-                <div class="price__ratio">
-                  <dl>
-                    <dt>80%</dt>
-                    <dd>пропана</dd>
-                  </dl>
-                  <dl>
-                    <dt>20%</dt>
-                    <dd>бутана</dd>
-                  </dl>
-                </div>
-                <img src="proportions.png" alt="car" />
-              </div>
-
-              <div
-                class="price__card wow animate__fadeIn"
-                data-wow-offset="200"
-                data-wow-duration="1s"
-                data-wow-delay=".8s"
-              >
-                <h2 class="price__card-title">Бутан</h2>
-                <h3 class="price__subtitle">от 16 рублей за литр</h3>
-                <p class="price__text">
-                  Испарение Бутана происходит только до 0 градусов и годится для
-                  использования в тёплое время года
-                </p>
-                <a href="" class="price__order open-popap">Заказать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="price__arrow" href="#benefits__title"></a>
-      </section>
-      <section
-        class="benefits wow animate__fadeIn"
-        data-wow-offset="300"
-        data-wow-duration="1s"
-      >
-        <!--benefits-->
-        <div class="container">
-          <div class="benefits__container">
-            <h1 class="benefits__title" id="benefits__title">
-              Преимущества работы с нашей компанией
-            </h1>
-            <div class="benefits__grid">
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".2s"
-              >
-                <div class="benefits__image">
-                  <img src="benef1.png" alt="Экономия на хранилище" />
-                </div>
-                <h2 class="benefits__card-title">Экономия на хранилище</h2>
-                <p class="benefits__text">
-                  за счёт собственных цистерн на нашей базе
-                </p>
-              </div>
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".4s"
-              >
-                <div class="benefits__image">
-                  <img src="benef2.png" alt="" />
-                </div>
-                <h2 class="benefits__card-title">Экономия на транспорте</h2>
-                <p class="benefits__text">более 10 собственный газовозов</p>
-              </div>
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".6s"
-              >
-                <div class="benefits__image">
-                  <img src="benef3.png" alt="" />
-                </div>
-                <h2 class="benefits__card-title">
-                  Поставки напрямую от производителей
-                </h2>
-                <p class="benefits__text">
-                  нет наценки на стоимость газа как у перекупщиков и небольших
-                  частных компаний
-                </p>
-              </div>
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".2s"
-              >
-                <div class="benefits__image">
-                  <img src="benef4.png" alt="" />
-                </div>
-                <h2 class="benefits__card-title">
-                  Любые объёмы поставки качественного газа
-                </h2>
-                <p class="benefits__text">
-                  вы получаете объем от 1 тонны до 20 тонн, с сертификатом
-                  качества газа
-                </p>
-              </div>
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".4s"
-              >
-                <div class="benefits__image">
-                  <img src="benef5.png" alt="" />
-                </div>
-                <h2 class="benefits__card-title">
-                  Оплата удобным для вас способом
-                </h2>
-                <p class="benefits__text">
-                  все газовозы оснащены терминалами для оплаты вашего заказа
-                </p>
-              </div>
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".6s"
-              >
-                <div class="benefits__image">
-                  <img src="benef6.png" alt="" />
-                </div>
-                <h2 class="benefits__card-title">Чистый газ без примесей</h2>
-                <p class="benefits__text">
-                  нет наценки на стоимость газа как у перекупщиков и небольших
-                  частных компаний
-                </p>
-              </div>
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".2s"
-              >
-                <div class="benefits__image">
-                  <img src="benef7.png" alt="" />
-                </div>
-                <h2 class="benefits__card-title">
-                  Длина заправочных рукавов — 50 метров
-                </h2>
-                <p class="benefits__text">
-                  не требуется подъезд автомобиля вплотную к резервуару
-                </p>
-              </div>
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".4s"
-              >
-                <div class="benefits__image">
-                  <img src="benef8.png" alt="" />
-                </div>
-                <h2 class="benefits__card-title">
-                  Доставка сжиженного газа в формате 24/7
-                </h2>
-                <p class="benefits__text">
-                  привезем газ в удобное для вас время или же по графику
-                </p>
-              </div>
-              <div
-                class="benefits__card wow animate__fadeIn"
-                data-wow-offset="300"
-                data-wow-duration="1s"
-                data-wow-delay=".6s"
-              >
-                <div class="benefits__image">
-                  <img src="benef9.png" alt="" />
-                </div>
-                <h2 class="benefits__card-title">Аттестованный персонал</h2>
-                <p class="benefits__text">
-                  квалифицированные сотрудники проведут полную консультацию и
-                  дадут рекомендации, если такие нужны будут
-                </p>
-              </div>
-            </div>
-            <!--benfit__grid -->
-            <div class="benefits__after">
-              <div class="benefits__after-image">
-                <img src="benef10.png" alt="car" />
-              </div>
-              <div class="benefits__after-content">
-                <h2 class="benefits__after-title">
-                  Благодаря нашему собственному автопарку мы можем давать
-                  гарантию, что доставим <span>за 4 часа</span>
-                </h2>
-                <p class="benefits__after-blue">
-                  Это сильное конкурентное преимущество, которым мы дорожим
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="volum wow animate__fadeIn"
-        data-wow-offset="300"
-        data-wow-duration="1s"
-      >
-        <div class="container">
-          <div class="volum__contaimer">
-            <h1 class="volum__title">Выберите свой объём Газовоза</h1>
-            <div class="volum__thumbs">
-              <dl class="active" data-num="0">
-                <dt>Малый</dt>
-                <dd>2000 л.</dd>
-              </dl>
-              <dl data-num="1">
-                <dt>Средний</dt>
-                <dd>6000 л.</dd>
-              </dl>
-              <dl data-num="2">
-                <dt>Стандартный</dt>
-                <dd>10 000 л.</dd>
-              </dl>
-              <dl data-num="3">
-                <dt>Оптовый</dt>
-                <dd>40 000 л.</dd>
-              </dl>
-            </div>
-            <div class="swiper volume__galery">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide volum__slide">
-                  <img src="sl-car-1.png" alt="sl-car" />
-                </div>
-                <div class="swiper-slide volum__slide">
-                  <img src="sl-car-2.png" alt="sl-car" />
-                </div>
-                <div class="swiper-slide volum__slide">
-                  <img src="sl-car-3.png" alt="sl-car" />
-                </div>
-                <div class="swiper-slide volum__slide">
-                  <img src="sl-car-4.png" alt="sl-car" />
-                </div>
-              </div>
-            </div>
-            <div class="volum__order-container">
-              <a href="#" class="btn volum__order open-popap">Заказать газ</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--volum section-->
-      <section
-        class="feedback wow animate__fadeIn"
-        data-wow-offset="300"
-        data-wow-duration="1s"
-      >
-        <div class="container">
-          <div class="feedback__container">
-            <h1 class="feedback__title">Отзывы наших клиентов</h1>
-            <div class="swiper feedback__swiper">
-              <div class="swiper-pagination"></div>
-              <div class="slide-next"></div>
-              <div class="slide-prev"></div>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="feedback__card-container">
-                    <div class="feedback__card">
-                      <img src="feedback.jpg" alt="Ольга И." />
-                      <h2 class="feedback__card-title">Ольга И.</h2>
-                      <h3 class="feedback__city">Красногорск</h3>
-                      <p class="feedback__text">
-                        Я всегда боюсь газа , а особенно боюсь что он может
-                        взорваться, как же мне помог Андрей водитель-экспедитор
-                        показал что бояться тут нечего и самое главное моего
-                        присутствие даже не понадобится. Спасибо компании за то
-                        что они все закрыли этот вопрос под ключ.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="feedback__card-container">
-                    <div class="feedback__card">
-                      <img src="feedback.jpg" alt="Ольга И." />
-                      <h2 class="feedback__card-title">Ольга И.</h2>
-                      <h3 class="feedback__city">Красногорск</h3>
-                      <p class="feedback__text">
-                        Я всегда боюсь газа , а особенно боюсь что он может
-                        взорваться, как же мне помог Андрей водитель-экспедитор
-                        показал что бояться тут нечего и самое главное моего
-                        присутствие даже не понадобится. Спасибо компании за то
-                        что они все закрыли этот вопрос под ключ.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="feedback__card-container">
-                    <div class="feedback__card">
-                      <img src="feedback.jpg" alt="Ольга И." />
-                      <h2 class="feedback__card-title">Ольга И.</h2>
-                      <h3 class="feedback__city">Красногорск</h3>
-                      <p class="feedback__text">
-                        Я всегда боюсь газа , а особенно боюсь что он может
-                        взорваться, как же мне помог Андрей водитель-экспедитор
-                        показал что бояться тут нечего и самое главное моего
-                        присутствие даже не понадобится. Спасибо компании за то
-                        что они все закрыли этот вопрос под ключ.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="feedback__card-container">
-                    <div class="feedback__card">
-                      <img src="feedback.jpg" alt="Ольга И." />
-                      <h2 class="feedback__card-title">Ольга И.</h2>
-                      <h3 class="feedback__city">Красногорск</h3>
-                      <p class="feedback__text">
-                        Я всегда боюсь газа , а особенно боюсь что он может
-                        взорваться, как же мне помог Андрей водитель-экспедитор
-                        показал что бояться тут нечего и самое главное моего
-                        присутствие даже не понадобится. Спасибо компании за то
-                        что они все закрыли этот вопрос под ключ.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="feedback__card-container">
-                    <div class="feedback__card">
-                      <img src="feedback.jpg" alt="Ольга И." />
-                      <h2 class="feedback__card-title">Ольга И.</h2>
-                      <h3 class="feedback__city">Красногорск</h3>
-                      <p class="feedback__text">
-                        Я всегда боюсь газа , а особенно боюсь что он может
-                        взорваться, как же мне помог Андрей водитель-экспедитор
-                        показал что бояться тут нечего и самое главное моего
-                        присутствие даже не понадобится. Спасибо компании за то
-                        что они все закрыли этот вопрос под ключ.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--feedback section-->
-      <section
-        class="answer wow animate__fadeIn"
-        data-wow-offset="300"
-        data-wow-duration="1s"
-      >
-        <div class="container">
-          <div class="answer__container">
-            <h1 class="answer__title">Ответы на часто задаваемые вопросы</h1>
-            <div class="answer__accordion accordion">
-              <div
-                class="accordion__container wow animate__fadeInUp"
-                data-wow-duration=".3s"
-                data-wow-offset="300"
-              >
-                <input type="radio" name="acc" id="check1" hidden />
-                <svg
-                  class="accordion__arrow"
-                  viewBox="0 0 14 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z"
-                  />
-                </svg>
-
-                <label class="accordion__title" for="check1"
-                  >Есть ли у вас инженеры в компании?</label
-                >
-                <div class="accordion__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
-                  quo! Harum corrupti aperiam est alias. Repudiandae vero alias
-                  rerum magni!
-                </div>
-              </div>
-              <div
-                class="accordion__container wow animate__fadeInUp"
-                data-wow-duration=".3s"
-                data-wow-offset="300"
-              >
-                <input type="radio" name="acc" id="check2" hidden />
-                <svg
-                  class="accordion__arrow"
-                  viewBox="0 0 14 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z"
-                  />
-                </svg>
-                <label class="accordion__title" for="check2"
-                  >Есть ли у вас инженеры в компании?</label
-                >
-                <div class="accordion__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
-                  quo! Harum corrupti aperiam est alias. Repudiandae vero alias
-                  rerum magni!
-                </div>
-              </div>
-              <div
-                class="accordion__container wow animate__fadeInUp"
-                data-wow-duration=".3s"
-                data-wow-offset="300"
-              >
-                <input type="radio" name="acc" id="check3" hidden />
-                <svg
-                  class="accordion__arrow"
-                  viewBox="0 0 14 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z"
-                  />
-                </svg>
-                <label class="accordion__title" for="check3"
-                  >Есть ли у вас инженеры в компании?</label
-                >
-                <div class="accordion__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
-                  quo! Harum corrupti aperiam est alias. Repudiandae vero alias
-                  rerum magni!
-                </div>
-              </div>
-              <div
-                class="accordion__container wow animate__fadeInUp"
-                data-wow-duration=".3s"
-                data-wow-offset="300"
-              >
-                <input type="radio" name="acc" id="check4" hidden />
-                <svg
-                  class="accordion__arrow"
-                  viewBox="0 0 14 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z"
-                  />
-                </svg>
-                <label class="accordion__title" for="check4"
-                  >Есть ли у вас инженеры в компании?</label
-                >
-                <div class="accordion__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
-                  quo! Harum corrupti aperiam est alias. Repudiandae vero alias
-                  rerum magni!
-                </div>
-              </div>
-              <div
-                class="accordion__container wow animate__fadeInUp"
-                data-wow-duration=".3s"
-                data-wow-offset="300"
-              >
-                <input type="radio" name="acc" id="check5" hidden />
-                <svg
-                  class="accordion__arrow"
-                  viewBox="0 0 14 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z"
-                  />
-                </svg>
-                <label class="accordion__title" for="check5"
-                  >Есть ли у вас инженеры в компании?</label
-                >
-                <div class="accordion__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
-                  quo! Harum corrupti aperiam est alias. Repudiandae vero alias
-                  rerum magni!
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--accorion section-->
-      <section
-        class="question wow animate__fadeIn"
-        data-wow-offset="300"
-        data-wow-duration="1s"
-        id="question"
-      >
-        <div class="container">
-          <div class="question__container">
-            <div class="question__left">
-              <h1 class="question__title">
-                Не нашли ответа на свой вопрос задайте их нашему специалисту
-              </h1>
-              <form class="question__form">
-                <input
-                  type="text"
-                  class="question__name input"
-                  placeholder="имя"
-                />
-                <input
-                  type="phone"
-                  class="question__phone input"
-                  placeholder="Телефон"
-                />
-                <textarea
-                  name="question"
-                  cols="30"
-                  rows="10"
-                  class="question__q input"
-                  placeholder="ваш вопрос"
-                ></textarea>
-                <input type="submit" class="question__submit" />
-              </form>
-            </div>
-            <div class="question__right">
-              <div class="question__image">
-                <img src="roman.jpg" alt="roman" />
-                <div class="question__about">
-                  <div class="name">Роман Ш.</div>
-                  <div class="job">Старший менеджер</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--question section-->
-      <section
-        class="partners wow animate__fadeIn"
-        data-wow-offset="300"
-        data-wow-duration="1s"
-      >
-        <div class="container">
-          <div class="partners__container">
-            <a class="partners__p" href="#">
-              <img src="rosoil.svg" alt="Роснефть" />
-            </a>
-            <a class="partners__p" href="#">
-              <img src="bashoil.svg" alt="Башнефть" />
-            </a>
-            <a class="partners__p" href="#">
-              <img src="transoil.svg" alt="Транснефть" />
-            </a>
-            <a class="partners__p" href="#">
-              <img src="gazprom.svg" alt="Газпром" />
-            </a>
-            <a class="partners__p" href="#"
-              ><img src="lukoil.svg" alt="Лукойл"
-            /></a>
-            <a class="partners__p" href="#">
-              <img src="tatoil.svg" alt="Татнефть" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <!--partners section-->
-      <div class="popap">
-        <div class="popap__backpalte"></div>
-        <div class="popap__container">
-          <h2 class="popap__title">Доставим газ за 4 часа</h2>
-          <div class="popap__close"></div>
-          <form class="popap__form">
-            <input
-              type="text"
-              class="popap__name popap__input"
-              placeholder="имя"
-            />
-            <input
-              type="phone"
-              class="popap__phone popap__input"
-              placeholder="Телефон"
-            />
-            <button type="submit" class="popap__btn btn">
-              Заказать доставку газа
-            </button>
-          </form>
-        </div>
-      </div>
-    </main>
-    <footer
-      class="footer wow animate__fadeIn"
-      data-wow-offset="300"
-      data-wow-duration="1s"
-    >
+    </section>
+    <section class="price wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s">
       <div class="container">
-        <div class="footer__container">
-          <h1 class="footer__title">
-            Закажи прямо сейчас и получи бесплатную установку телеметрии﻿
-          </h1>
-          <div
-            class="footer__btn wow animate__pulse"
-            data-wow-duration="1s"
-            data-wow-offset="300"
-            data-wow-iteration="3"
-          >
-            <a href="#" class="btn footer__order open-popap">Заказать газ</a>
-          </div>
-          <div class="footer__contacts">
-            <div class="footer__about">
-              <h2 class="footer__about-title">Посетите наш уютный офис</h2>
-              <p class="footer__text">
-                где мы сможем вас полностью проконсультировать по всем вопросам
+        <div class="price__container">
+          <h2 class="price__title">
+            Стоимость газа в ваш газгольдер сегодня
+          </h2>
+          <div class="price__grid">
+            <div class="price__card wow animate__fadeIn" data-wow-offset="200" data-wow-duration="1s"
+              data-wow-delay=".5s">
+              <h2 class="price__card-title">Пропан</h2>
+              <h3 class="price__subtitle">от 25 рублей за литр</h3>
+              <p class="price__text">
+                Физически испарение происходит до -40 градусов, что позволяет
+                использовать его в наших с вами погодных условиях
               </p>
-              <hr class="footer__line" />
-              <h3 class="footer__ofice">Офис</h3>
-              <p class="footer__location">Видное , Белокаменное шоссе, 20</p>
-              <h3 class="footer__phone">Телефон:</h3>
-              <p class="footer__ph">+7 987 654 32-10</p>
+              <a href="" class="price__order open-popap">Заказать</a>
             </div>
-            <div class="footer__map" id="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1884.4220897109833!2d37.726047985994946!3d55.71593706572811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab50f04151141%3A0xbe9ec5124f2a8db8!2z0JLQvtC70LPQvtCz0YDQsNC00YHQutC40Lkg0L_RgC3Rgi4sINCc0L7RgdC60LLQsA!5e0!3m2!1sru!2sru!4v1671518901526!5m2!1sru!2sru"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+
+            <div class="price__card-center wow animate__fadeIn" data-wow-offset="200" data-wow-duration="1s"
+              data-wow-delay=".2s">
+              <h2 class="price__title-center">Идеальное соотношение</h2>
+              <div class="price__ratio">
+                <dl>
+                  <dt>80%</dt>
+                  <dd>пропана</dd>
+                </dl>
+                <dl>
+                  <dt>20%</dt>
+                  <dd>бутана</dd>
+                </dl>
+              </div>
+              <img src="proportions.png" alt="car" />
             </div>
-          </div>
-          <div class="footer__links">
-            <a href="#" class="footer__link">Политика конфиденциальности</a>
-            <a href="#" class="footer__link"
-              >Согласие на обработку персональных данных</a
-            >
+
+            <div class="price__card wow animate__fadeIn" data-wow-offset="200" data-wow-duration="1s"
+              data-wow-delay=".8s">
+              <h2 class="price__card-title">Бутан</h2>
+              <h3 class="price__subtitle">от 16 рублей за литр</h3>
+              <p class="price__text">
+                Испарение Бутана происходит только до 0 градусов и годится для
+                использования в тёплое время года
+              </p>
+              <a href="" class="price__order open-popap">Заказать</a>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+      <a class="price__arrow" href="#benefits__title"></a>
+    </section>
+    <section class="benefits wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s">
+      <!--benefits-->
+      <div class="container">
+        <div class="benefits__container">
+          <h2 class="benefits__title" id="benefits__title">
+            Преимущества работы с нашей компанией
+          </h2>
+          <div class="benefits__grid">
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".2s">
+              <div class="benefits__image">
+                <img src="benef1.png" alt="Экономия на хранилище" />
+              </div>
+              <h2 class="benefits__card-title">Экономия на хранилище</h2>
+              <p class="benefits__text">
+                за счёт собственных цистерн на нашей базе
+              </p>
+            </div>
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".4s">
+              <div class="benefits__image">
+                <img src="benef2.png" alt="" />
+              </div>
+              <h2 class="benefits__card-title">Экономия на транспорте</h2>
+              <p class="benefits__text">более 10 собственный газовозов</p>
+            </div>
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".6s">
+              <div class="benefits__image">
+                <img src="benef3.png" alt="" />
+              </div>
+              <h2 class="benefits__card-title">
+                Поставки напрямую от производителей
+              </h2>
+              <p class="benefits__text">
+                нет наценки на стоимость газа как у перекупщиков и небольших
+                частных компаний
+              </p>
+            </div>
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".2s">
+              <div class="benefits__image">
+                <img src="benef4.png" alt="" />
+              </div>
+              <h2 class="benefits__card-title">
+                Любые объёмы поставки качественного газа
+              </h2>
+              <p class="benefits__text">
+                вы получаете объем от 1 тонны до 20 тонн, с сертификатом
+                качества газа
+              </p>
+            </div>
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".4s">
+              <div class="benefits__image">
+                <img src="benef5.png" alt="" />
+              </div>
+              <h2 class="benefits__card-title">
+                Оплата удобным для вас способом
+              </h2>
+              <p class="benefits__text">
+                все газовозы оснащены терминалами для оплаты вашего заказа
+              </p>
+            </div>
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".6s">
+              <div class="benefits__image">
+                <img src="benef6.png" alt="" />
+              </div>
+              <h2 class="benefits__card-title">Чистый газ без примесей</h2>
+              <p class="benefits__text">
+                нет наценки на стоимость газа как у перекупщиков и небольших
+                частных компаний
+              </p>
+            </div>
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".2s">
+              <div class="benefits__image">
+                <img src="benef7.png" alt="" />
+              </div>
+              <h2 class="benefits__card-title">
+                Длина заправочных рукавов — 50 метров
+              </h2>
+              <p class="benefits__text">
+                не требуется подъезд автомобиля вплотную к резервуару
+              </p>
+            </div>
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".4s">
+              <div class="benefits__image">
+                <img src="benef8.png" alt="" />
+              </div>
+              <h2 class="benefits__card-title">
+                Доставка сжиженного газа в формате 24/7
+              </h2>
+              <p class="benefits__text">
+                привезем газ в удобное для вас время или же по графику
+              </p>
+            </div>
+            <div class="benefits__card wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s"
+              data-wow-delay=".6s">
+              <div class="benefits__image">
+                <img src="benef9.png" alt="" />
+              </div>
+              <h2 class="benefits__card-title">Аттестованный персонал</h2>
+              <p class="benefits__text">
+                квалифицированные сотрудники проведут полную консультацию и
+                дадут рекомендации, если такие нужны будут
+              </p>
+            </div>
+          </div>
+          <!--benfit__grid -->
+          <div class="benefits__after">
+            <div class="benefits__after-image">
+              <img src="benef10.png" alt="car" />
+            </div>
+            <div class="benefits__after-content">
+              <h2 class="benefits__after-title">
+                Благодаря нашему собственному автопарку мы можем давать
+                гарантию, что доставим <span>за 4 часа</span>
+              </h2>
+              <p class="benefits__after-blue">
+                Это сильное конкурентное преимущество, которым мы дорожим
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="volum wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s">
+      <div class="container">
+        <div class="volum__contaimer">
+          <h2 class="volum__title">Выберите свой объём Газовоза</h2>
+          <div class="volum__thumbs">
+            <dl class="active" data-num="0">
+              <dt>Малый</dt>
+              <dd>2000 л.</dd>
+            </dl>
+            <dl data-num="1">
+              <dt>Средний</dt>
+              <dd>6000 л.</dd>
+            </dl>
+            <dl data-num="2">
+              <dt>Стандартный</dt>
+              <dd>10 000 л.</dd>
+            </dl>
+            <dl data-num="3">
+              <dt>Оптовый</dt>
+              <dd>40 000 л.</dd>
+            </dl>
+          </div>
+          <div class="swiper volume__galery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide volum__slide">
+                <img src="sl-car-1.png" alt="sl-car" />
+              </div>
+              <div class="swiper-slide volum__slide">
+                <img src="sl-car-2.png" alt="sl-car" />
+              </div>
+              <div class="swiper-slide volum__slide">
+                <img src="sl-car-3.png" alt="sl-car" />
+              </div>
+              <div class="swiper-slide volum__slide">
+                <img src="sl-car-4.png" alt="sl-car" />
+              </div>
+            </div>
+          </div>
+          <div class="volum__order-container">
+            <a href="#" class="btn volum__order open-popap">Заказать газ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--volum section-->
+    <section class="feedback wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s">
+      <div class="container">
+        <div class="feedback__container">
+          <h2 class="feedback__title">Отзывы наших клиентов</h2>
+          <div class="swiper feedback__swiper">
+            <div class="swiper-pagination"></div>
+            <div class="slide-next"></div>
+            <div class="slide-prev"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="feedback__card-container">
+                  <div class="feedback__card">
+                    <img src="feedback.jpg" alt="Ольга И." />
+                    <h2 class="feedback__card-title">Ольга И.</h2>
+                    <h3 class="feedback__city">Красногорск</h3>
+                    <p class="feedback__text">
+                      Я всегда боюсь газа , а особенно боюсь что он может
+                      взорваться, как же мне помог Андрей водитель-экспедитор
+                      показал что бояться тут нечего и самое главное моего
+                      присутствие даже не понадобится. Спасибо компании за то
+                      что они все закрыли этот вопрос под ключ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__card-container">
+                  <div class="feedback__card">
+                    <img src="feedback.jpg" alt="Ольга И." />
+                    <h2 class="feedback__card-title">Ольга И.</h2>
+                    <h3 class="feedback__city">Красногорск</h3>
+                    <p class="feedback__text">
+                      Я всегда боюсь газа , а особенно боюсь что он может
+                      взорваться, как же мне помог Андрей водитель-экспедитор
+                      показал что бояться тут нечего и самое главное моего
+                      присутствие даже не понадобится. Спасибо компании за то
+                      что они все закрыли этот вопрос под ключ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__card-container">
+                  <div class="feedback__card">
+                    <img src="feedback.jpg" alt="Ольга И." />
+                    <h2 class="feedback__card-title">Ольга И.</h2>
+                    <h3 class="feedback__city">Красногорск</h3>
+                    <p class="feedback__text">
+                      Я всегда боюсь газа , а особенно боюсь что он может
+                      взорваться, как же мне помог Андрей водитель-экспедитор
+                      показал что бояться тут нечего и самое главное моего
+                      присутствие даже не понадобится. Спасибо компании за то
+                      что они все закрыли этот вопрос под ключ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__card-container">
+                  <div class="feedback__card">
+                    <img src="feedback.jpg" alt="Ольга И." />
+                    <h2 class="feedback__card-title">Ольга И.</h2>
+                    <h3 class="feedback__city">Красногорск</h3>
+                    <p class="feedback__text">
+                      Я всегда боюсь газа , а особенно боюсь что он может
+                      взорваться, как же мне помог Андрей водитель-экспедитор
+                      показал что бояться тут нечего и самое главное моего
+                      присутствие даже не понадобится. Спасибо компании за то
+                      что они все закрыли этот вопрос под ключ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__card-container">
+                  <div class="feedback__card">
+                    <img src="feedback.jpg" alt="Ольга И." />
+                    <h2 class="feedback__card-title">Ольга И.</h2>
+                    <h3 class="feedback__city">Красногорск</h3>
+                    <p class="feedback__text">
+                      Я всегда боюсь газа , а особенно боюсь что он может
+                      взорваться, как же мне помог Андрей водитель-экспедитор
+                      показал что бояться тут нечего и самое главное моего
+                      присутствие даже не понадобится. Спасибо компании за то
+                      что они все закрыли этот вопрос под ключ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--feedback section-->
+    <section class="answer wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s">
+      <div class="container">
+        <div class="answer__container">
+          <h2 class="answer__title">Ответы на часто задаваемые вопросы</h2>
+          <div class="answer__accordion accordion">
+            <div class="accordion__container wow animate__fadeInUp" data-wow-duration=".3s" data-wow-offset="100">
+              <input type="radio" name="acc" id="check1" hidden>
+              <svg class="accordion__arrow" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z" />
+              </svg>
+
+              <label class="accordion__title" for="check1">Есть ли у вас инженеры в компании?</label>
+              <div class="accordion__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
+                quo! Harum corrupti aperiam est alias. Repudiandae vero alias
+                rerum magni!
+              </div>
+            </div>
+            <div class="accordion__container wow animate__fadeInUp" data-wow-duration=".3s" data-wow-offset="100">
+              <input type="radio" name="acc" id="check2" hidden />
+              <svg class="accordion__arrow" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z" />
+              </svg>
+              <label class="accordion__title" for="check2">Есть ли у вас инженеры в компании?</label>
+              <div class="accordion__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
+                quo! Harum corrupti aperiam est alias. Repudiandae vero alias
+                rerum magni!
+              </div>
+            </div>
+            <div class="accordion__container wow animate__fadeInUp" data-wow-duration=".3s" data-wow-offset="100">
+              <input type="radio" name="acc" id="check3" hidden />
+              <svg class="accordion__arrow" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z" />
+              </svg>
+              <label class="accordion__title" for="check3">Есть ли у вас инженеры в компании?</label>
+              <div class="accordion__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
+                quo! Harum corrupti aperiam est alias. Repudiandae vero alias
+                rerum magni!
+              </div>
+            </div>
+            <div class="accordion__container wow animate__fadeInUp" data-wow-duration=".3s" data-wow-offset="100">
+              <input type="radio" name="acc" id="check4" hidden />
+              <svg class="accordion__arrow" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z" />
+              </svg>
+              <label class="accordion__title" for="check4">Есть ли у вас инженеры в компании?</label>
+              <div class="accordion__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
+                quo! Harum corrupti aperiam est alias. Repudiandae vero alias
+                rerum magni!
+              </div>
+            </div>
+            <div class="accordion__container wow animate__fadeInUp" data-wow-duration=".3s" data-wow-offset="100">
+              <input type="radio" name="acc" id="check5" hidden />
+              <svg class="accordion__arrow" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.87698 0.96169C5.86635 1.02716 5.86145 1.09341 5.86231 1.1597L5.86231 12.4474L5.74783 12.2013C5.63396 11.9607 5.47898 11.7418 5.28991 11.5544L2.12456 8.3891C1.72661 7.97221 1.08642 7.90217 0.607715 8.2231C0.0976031 8.59663 -0.0131553 9.31294 0.360369 9.82309C0.390563 9.8643 0.423475 9.90348 0.458892 9.94029L6.18285 15.6642C6.62968 16.1116 7.35451 16.112 7.80184 15.6651C7.80212 15.6649 7.80244 15.6645 7.80273 15.6642L13.5267 9.94029C13.9731 9.4926 13.9721 8.76777 13.5244 8.3213C13.4892 8.28617 13.4517 8.25337 13.4122 8.2231C12.9335 7.90217 12.2933 7.97221 11.8954 8.3891L8.72429 11.5487C8.55615 11.7167 8.41516 11.9098 8.30644 12.1211L8.15189 12.4646L8.15189 1.2227C8.17361 0.637892 7.7651 0.124811 7.19027 0.0149466C6.56618 -0.0862601 5.97822 0.337599 5.87698 0.96169Z" />
+              </svg>
+              <label class="accordion__title" for="check5">Есть ли у вас инженеры в компании?</label>
+              <div class="accordion__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                natus modi sapiente. Nisi iusto nam eum excepturi nemo, ab
+                quo! Harum corrupti aperiam est alias. Repudiandae vero alias
+                rerum magni!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--accorion section-->
+    <section class="question wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s" id="question">
+      <div class="container">
+        <div class="question__container">
+          <div class="question__left">
+            <h2 class="question__title">
+              Не нашли ответа на свой вопрос задайте их нашему специалисту
+            </h2>
+            <form class="question__form">
+              <input type="text" class="question__name input" placeholder="имя" />
+              <input type="tel" class="question__phone input" placeholder="Телефон" />
+              <textarea name="question" cols="30" rows="10" class="question__q input"
+                placeholder="ваш вопрос"></textarea>
+              <input type="submit" class="question__submit" />
+            </form>
+          </div>
+          <div class="question__right">
+            <div class="question__image">
+              <img src="roman.jpg" alt="roman" />
+              <div class="question__about">
+                <div class="name">Роман Ш.</div>
+                <div class="job">Старший менеджер</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--question section-->
+    <section class="partners wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s">
+      <div class="container">
+        <div class="partners__container">
+          <a class="partners__p" href="#">
+            <img src="rosoil.svg" alt="Роснефть" />
+          </a>
+          <a class="partners__p" href="#">
+            <img src="bashoil.svg" alt="Башнефть" />
+          </a>
+          <a class="partners__p" href="#">
+            <img src="transoil.svg" alt="Транснефть" />
+          </a>
+          <a class="partners__p" href="#">
+            <img src="gazprom.svg" alt="Газпром" />
+          </a>
+          <a class="partners__p" href="#"><img src="lukoil.svg" alt="Лукойл" /></a>
+          <a class="partners__p" href="#">
+            <img src="tatoil.svg" alt="Татнефть" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--partners section-->
+    <div class="popap">
+      <div class="popap__backpalte"></div>
+      <div class="popap__container">
+        <h2 class="popap__title">Доставим газ за 4 часа</h2>
+        <div class="popap__close"></div>
+        <form class="popap__form">
+          <input type="text" class="popap__name popap__input" placeholder="имя" />
+          <input type="tel" class="popap__phone popap__input" placeholder="Телефон" />
+          <button type="submit" class="popap__btn btn">
+            Заказать доставку газа
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer wow animate__fadeIn" data-wow-offset="100" data-wow-duration="1s">
+    <div class="container">
+      <div class="footer__container">
+        <h2 class="footer__title">
+          Закажи прямо сейчас и получи бесплатную установку телеметрии﻿
+        </h2>
+        <div class="footer__btn wow animate__pulse" data-wow-duration="1s" data-wow-offset="100" data-wow-iteration="3">
+          <a href="#" class="btn footer__order open-popap">Заказать газ</a>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__about">
+            <h2 class="footer__about-title">Посетите наш уютный офис</h2>
+            <p class="footer__text">
+              где мы сможем вас полностью проконсультировать по всем вопросам
+            </p>
+            <hr class="footer__line" />
+            <h3 class="footer__ofice">Офис</h3>
+            <p class="footer__location">Видное , Белокаменное шоссе, 20</p>
+            <h3 class="footer__phone">Телефон:</h3>
+            <p class="footer__ph">+7 987 654 32-10</p>
+          </div>
+          <div class="footer__map" id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1884.4220897109833!2d37.726047985994946!3d55.71593706572811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab50f04151141%3A0xbe9ec5124f2a8db8!2z0JLQvtC70LPQvtCz0YDQsNC00YHQutC40Lkg0L_RgC3Rgi4sINCc0L7RgdC60LLQsA!5e0!3m2!1sru!2sru!4v1671518901526!5m2!1sru!2sru"
+              style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+          <a href="#" class="footer__link">Согласие на обработку персональных данных</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>

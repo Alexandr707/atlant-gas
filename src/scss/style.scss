@@ -1,8 +1,8 @@
-@import "./reset";
-@import "./vars";
-@import "./fonts";
-@import "swiper/swiper-bundle.css";
-@import "animate.css";
+@import './reset';
+@import './vars';
+@import './fonts';
+@import 'swiper/swiper-bundle.css';
+@import 'animate.css';
 
 html {
   box-sizing: border-box;
@@ -16,17 +16,13 @@ html {
 
 body {
   background-color: $charlestonGreen;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: $antiFlashWhite;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
 
-.wow {
-  // opacity: 0;
-  // animation-fill-mode: forwards;
-}
 button {
   box-shadow: none;
   border: none;
@@ -75,13 +71,13 @@ button {
   flex-direction: column;
 }
 .header__tel {
-  font-family: "Russo One", sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-size: 24px;
   color: $antiFlashWhite;
   text-decoration: none;
 }
 .header__question {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: $dodgeBlue;
   text-decoration: underline;
@@ -97,7 +93,7 @@ button {
 .delivery__container {
   position: relative;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     top: 0;
@@ -141,13 +137,13 @@ button {
     }
   }
   dd {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-weight: 300;
   }
 }
 .delivery__title {
   margin: 12px 0 14px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   max-width: 530px;
   font-size: 64px;
   line-height: 1;
@@ -157,12 +153,12 @@ button {
   position: relative;
   max-width: 310px;
   margin-bottom: 40px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 24px;
   line-height: 1.208;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 95%;
     top: 40%;
@@ -178,7 +174,7 @@ button {
   max-width: 395px;
   margin-bottom: 14px;
 
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 22px;
   line-height: 27px;
   text-align: center;
@@ -213,7 +209,7 @@ button {
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: -4px;
     top: -4px;
@@ -230,7 +226,7 @@ button {
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 5px;
     left: 5px;
@@ -243,7 +239,7 @@ button {
   }
 }
 .delivery__subtitle {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 600;
   line-height: 1;
 }
@@ -256,7 +252,7 @@ button {
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -270,7 +266,7 @@ button {
 .price__title {
   margin-bottom: 49px;
 
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 36px;
   color: $dodgeBlue;
   text-align: center;
@@ -285,18 +281,18 @@ button {
   animation-fill-mode: both;
 }
 .price__card-title {
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 36px;
 }
 .price__subtitle {
   margin-bottom: 21px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   color: $dodgeBlue;
   font-size: 24px;
   white-space: nowrap;
 }
 .price__text {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 300;
   margin-bottom: 58px;
 }
@@ -304,7 +300,7 @@ button {
   display: inline-block;
   padding: 10px 35px;
 
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   color: $antiFlashWhite;
   font-weight: 700;
   font-size: 18px;
@@ -325,7 +321,7 @@ button {
 }
 .price__title-center {
   margin-bottom: 13px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 20px;
   text-align: center;
   opacity: 0.7;
@@ -341,13 +337,13 @@ button {
     border-left: 1px solid rgba(241, 241, 241, 0.3);
   }
   dt {
-    font-family: "Russo One";
+    font-family: 'Russo One';
     font-size: 36px;
     line-height: 1;
     opacity: 0.7;
   }
   dd {
-    font-family: "Russo One";
+    font-family: 'Russo One';
     font-size: 18px;
     line-height: 1;
     opacity: 0.7;
@@ -378,14 +374,13 @@ button {
     bottom: 0;
   }
 }
-.benefits {
-}
+
 .benefits__container {
   padding: 56px 32px 0;
 }
 .benefits__title {
   margin-bottom: 25px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 36px;
   text-align: center;
 }
@@ -407,7 +402,7 @@ button {
 }
 .benefits__card-title {
   margin-bottom: 14px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   color: $dodgeBlue;
   font-size: 24px;
   line-height: 1.2;
@@ -427,7 +422,7 @@ button {
   width: 50%;
 }
 .benefits__after-title {
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 35px;
   line-height: 1.1;
   margin-bottom: 20px;
@@ -444,15 +439,13 @@ button {
   background-color: $dodgeBlue;
 }
 
-.volum {
-}
 .volum__contaimer {
   padding: 34px 32px 84px;
 }
 .volum__title {
   margin-bottom: 45px;
 
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 36px;
   color: $dodgeBlue;
   text-align: center;
@@ -488,7 +481,7 @@ button {
   }
   dt,
   dd {
-    font-family: "Russo One";
+    font-family: 'Russo One';
     font-size: 18px;
     line-height: 1.2;
   }
@@ -503,7 +496,7 @@ button {
 
 .volum__order {
   display: inline-block;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 24px;
   line-height: 1.2;
   color: $antiFlashWhite;
@@ -518,15 +511,14 @@ button {
 }
 
 // volum section
-.feedback {
-}
+
 .feedback__container {
   padding: 40px 64px 82px;
 }
 .feedback__title {
   margin-bottom: 47px;
   text-align: center;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 36px;
   line-height: 1.2;
   color: $dodgeBlue;
@@ -556,14 +548,14 @@ button {
   }
 }
 .feedback__card-title {
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 24px;
   line-height: 1.2;
   color: $dodgeBlue;
 }
 .feedback__city {
   margin: 4px 0 15px 0;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 18px;
   line-height: 1.2;
   color: $charlestonGreen;
@@ -632,7 +624,7 @@ button {
 }
 .answer__title {
   margin-bottom: 27px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 36px;
   line-height: 1.2;
   color: $dodgeBlue;
@@ -680,8 +672,7 @@ button {
   transition: max-height 0.7s;
 }
 // accorion section
-.question {
-}
+
 .question__container {
   padding: 55px 32px 0;
   display: flex;
@@ -693,7 +684,7 @@ button {
 }
 .question__title {
   margin-bottom: 50px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 36px;
   line-height: 1.2;
 }
@@ -702,8 +693,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
 }
-.question__name {
-}
+
 .input {
   width: 402px;
   margin-bottom: 24px;
@@ -720,8 +710,7 @@ button {
     color: rgba(45, 45, 45, 0.5);
   }
 }
-.question__phone {
-}
+
 .question__q {
   max-height: 112px;
   resize: none;
@@ -766,7 +755,7 @@ button {
   opacity: 0.8;
   border-radius: 20px;
   .name {
-    font-family: "Russo One";
+    font-family: 'Russo One';
     font-size: 24px;
   }
   .job {
@@ -775,8 +764,7 @@ button {
 }
 
 // question section
-.partners {
-}
+
 .partners__container {
   display: flex;
   justify-content: space-between;
@@ -801,8 +789,6 @@ button {
   }
 }
 
-.footer {
-}
 .footer__container {
   padding-bottom: 68px;
 }
@@ -810,7 +796,7 @@ button {
   max-width: 690px;
   margin: 0px auto 14px;
   text-align: center;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   color: $dodgeBlue;
   font-size: 36px;
   line-height: 1.2;
@@ -820,7 +806,7 @@ button {
   margin-bottom: 40px;
 }
 .footer__order {
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 24px;
   line-height: 1.2;
 }
@@ -838,7 +824,7 @@ button {
 }
 .footer__about-title {
   margin-bottom: 30px;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   color: $dodgeBlue;
   font-size: 36px;
   line-height: 1.2;
@@ -931,7 +917,7 @@ body.open {
   z-index: 11;
 }
 .popap__title {
-  font-family: "Russo One";
+  font-family: 'Russo One';
   max-width: 230px;
   margin-bottom: 30px;
   color: $dodgeBlue;
@@ -956,8 +942,7 @@ body.open {
     text-align: center;
   }
 }
-.popap__name {
-}
+
 .popap__input {
   margin-bottom: 24px;
   padding: 17px 22px 18px 22px;
@@ -972,8 +957,7 @@ body.open {
     color: rgba(45, 45, 45, 0.5);
   }
 }
-.popap__phone {
-}
+
 .popap__btn {
   display: flex;
   justify-content: center;
@@ -983,7 +967,7 @@ body.open {
   margin: 42px auto 0 auto;
   padding: 30px;
   align-self: center;
-  font-family: "Russo One";
+  font-family: 'Russo One';
   font-size: 24px;
   line-height: 1.2;
   color: $antiFlashWhite;
