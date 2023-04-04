@@ -1,9 +1,14 @@
+import Swiper from 'swiper';
+import WOW from 'wow.js';
 import './scss/style.scss';
 
-if (document.readyState === 'complete') init();
-else document.addEventListener('DOMContentLoaded', init);
+// if (document.readyState === 'complete') init();
+// else document.addEventListener('DOMContentLoaded', init);
+
+document.addEventListener('DOMContentLoaded', init);
 
 function init() {
+  console.log('script start');
   const thumbs = document.querySelector('.volum__thumbs');
   const galleryTop = new Swiper('.volume__galery', {
     on: {
